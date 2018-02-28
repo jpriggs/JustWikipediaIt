@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Graduate');
+@import url('https://fonts.googleapis.com/css?family=Baumans');
+body {
+    background-color: #CBE32D;
+}
+.title {
+      font-family: 'Special Elite', cursive;
+      font-size: 72px;
+      color: #005A31;
+      text-shadow: 2px 2px 5px #F3FAB6, 2px 2px 5px #CBE32D;
+      text-align: center;
+      margin-top: 50px;
+}
+.search-label {
+      font-family: 'Comfortaa', cursive;
+      font-size: 32px;
+      font-weight: bold;
+      color: #005A31;
+      text-shadow: 2px 2px 5px #F3FAB6, 2px 2px 5px #CBE32D;
+      text-align: center;
+      margin-top: 20px;
+}
+.form-control {
+      background-color: #F3FAB6;
+      font-family: 'Baumans', cursive;
+      font-size: 36px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 40px;
+      height: auto;
+      width: 550px;
+      border-radius: 35px;
+      box-shadow: 2px 2px gray;
+}
+input[type=text]:focus {
+    background-color: #F3FAB6;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+.search-button {
+      background-color: #F3FAB6;
+      font-family: 'Comfortaa', cursive;
+      font-size: 24px;
+      text-align: center;
+      color: #005A31;
+      border-radius: 25px;
+      box-shadow: 2px 2px gray;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      padding-top: 7px;
+}
+.lucky-button {
+      background-color: #F3FAB6;
+      font-family: 'Comfortaa', cursive;
+      font-size: 24px;
+      text-align: center;
+      color: #005A31;
+      border-radius: 25px;
+      box-shadow: 2px 2px gray;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      padding-top: 7px;
+}
+.lucky-button:focus {
+      border-radius: 25px;
+      ouline: none;
+}
+.results-list {
+    list-style-type: none;
+}
+.results-item {
+    cursor: pointer;
+}
+.results-item a {
+      background-color: #F3FAB6;
+      font-family: 'Baumans', cursive;
+      font-size: 24px;
+      color: #005A31;
+      text-decoration: none;
+      display: block;
+      border-radius: 25px;
+      box-shadow: 2px 2px gray;
+      height: auto;
+      width: auto;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3px 20px;
+      pointer-events: none;
+}
+.results-item:hover {
+      box-shadow: 8px 8px 10px gray;
+      border-radius: 25px;
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transform: scale(1.04);
+      backface-visibility: hidden;
+      -webkit-font-smoothing: subpixel-antialiased;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .search-button {
+      margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .search-button {
+      margin-left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .search-button {
+      margin-left: 100px;
+  }
+}

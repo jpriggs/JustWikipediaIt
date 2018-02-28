@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <title>Just Wikipedia It!</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="title">
+                        <p>Just Wikipedia it!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <p class="search-label">Search for an Article</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="search-bar">
+                        <input type="text" class="form-control" id="search-item">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-5 offset-md-1 col-lg-4 offset-lg-2 col-xl-4 offset-xl-2">
+                    <button class="btn btn-success search-button" type="submit" id="search-button">Search</button>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                    <button class="btn btn-success lucky-button" type="submit" id="lucky-button">I'm Feeling Lucky!</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="results-wrapper">
+                        <table class="results-table">
+                            <ul class="results-list" id="results-list">
+                            </ul>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
